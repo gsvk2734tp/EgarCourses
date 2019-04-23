@@ -12,3 +12,9 @@ FROM users u,
 WHERE u.registered BETWEEN '6/3/2014' AND '30/1/2020'
   AND c.release_year BETWEEN '6/3/2014' AND '30/1/2020'
   AND p.birthday BETWEEN '6/3/2014' AND '30/1/2020';
+
+SELECT u.name, u.email, r.role
+FROM users u,
+     roles r
+WHERE u.id = r.user_id
+  AND u.id = (SELECT id FROM users WHERE email = 'admin@gmail.com');
