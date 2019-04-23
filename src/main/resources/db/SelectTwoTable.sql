@@ -1,3 +1,5 @@
+-- Postgres dialect
+
 SELECT u.name, u.email, adr.country, r.role
 FROM users u,
      address adr,

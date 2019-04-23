@@ -1,3 +1,5 @@
+-- Postgres dialect
+
 DELETE
 FROM roles;
 DELETE

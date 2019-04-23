@@ -1,3 +1,5 @@
+-- Postgres dialect
+
 CREATE TABLE users
 (
   id         INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),

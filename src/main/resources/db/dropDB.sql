@@ -1,3 +1,5 @@
+-- Postgres dialect
+
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS address;
 DROP TABLE IF EXISTS users;

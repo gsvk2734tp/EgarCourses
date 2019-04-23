@@ -1,3 +1,5 @@
+-- Postgres dialect
+
 DELETE FROM cars WHERE speed NOT BETWEEN 200 AND 500;
 
 UPDATE pets SET name = 'leon' WHERE name LIKE '%at';
