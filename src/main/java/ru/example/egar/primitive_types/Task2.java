@@ -25,14 +25,16 @@ public class Task2 {
 
     private static void convertAndPrintNumbers(Number target, String type) {
         Number result = 0;
-        if (BYTE_VALUE_TYPES.equals(type.toLowerCase())) {
-            result = target.byteValue();
-        }
-        if (INT_VALUE_TYPES.equals(type.toLowerCase())) {
-            result = target.intValue();
-        }
-        if (LONG_VALUE_TYPES.equals(type.toLowerCase())) {
-            result = target.longValue();
+        switch (type.toLowerCase()) {
+            case BYTE_VALUE_TYPES:
+                result = target.byteValue();
+                break;
+            case INT_VALUE_TYPES:
+                result = target.intValue();
+                break;
+            case LONG_VALUE_TYPES:
+                result = target.longValue();
+                break;
         }
         System.out.println(String.format("Convert %s %s to %s, result = %s",
                 target, target.getClass().getSimpleName(), type, result));
