@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/ico.svg" type="image/x-icon">
-    <link >
+    <link rel="shortcut icon" href="img/ico.svg">
+    <link>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <title>Todo list</title>
 </head>
 <body>
@@ -12,28 +15,48 @@
     <div class="header"><span>Todo List</span></div>
     <div class="wrap-list">
         <ol class="list">
-            <li>
+            <li id="delete1">
                 <input type="checkbox" id="check-1" checked="checked">
-                <label for="check-1">Shop</label>
+                <label for="check-1" id="label-1">Shop</label>
+                <label class="delete1">Удалить</label>
             </li>
-            <li>
+            <li id="delete2">
                 <input type="checkbox" id="check-2">
                 <label for="check-2">Practice</label>
+                <label class="delete2">Удалить</label>
             </li>
-            <li>
+            <li id="delete3">
                 <input type="checkbox" id="check-3">
                 <label for="check-3">Sleep</label>
+                <label class="delete3">Удалить</label>
             </li>
-            <li>
+            <li id="delete4">
                 <input type="checkbox" id="check-4">
                 <label for="check-4">Enjoy life</label>
+                <label class="delete4">Удалить</label>
             </li>
-            <li>
+            <li id="delete5">
                 <input type="checkbox" id="check-5" checked="checked">
                 <label for="check-5">Do something</label>
+                <label class="delete5">Удалить</label>
             </li>
         </ol>
+
+        <br>
+        <br>
+        <div>
+            <form id="myform">
+                <label>Новое задание:
+                    <input id="input-1" type="text" placeholder="Укажите новое задание"></label>
+                <label class="check-box">
+                    Важно
+                    <input type="checkbox" name="checkbox">
+                </label>
+                <button type="button" class="btn btn-primary">Добавить</button>
+            </form>
+        </div>
     </div>
 </div>
+<script src="js/js.js"></script>
 </body>
 </html>

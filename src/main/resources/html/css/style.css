@@ -1,83 +1,123 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     outline: none;
     border: none;
     box-sizing: border-box;
 }
-*:before,
-*:after{
-    box-sizing: border-box;
+
+#check-important {
+     padding: 100px !important;
+    top: 100px !important;
 }
-html,body{
+
+html, body {
     min-height: 100%;
 }
-body{
+
+body {
     background-image: radial-gradient(mintcream 0%, gray 100%);
     font-family: "Trebuchet MS";
-    user-select: none;
 }
-.wrap{
+
+.wrap {
     width: 300px;
     height: 350px;
     margin: 50px auto;
     border-radius: 20px;
-    border: solid 8px #2c3033;
-    background: white;
-    box-shadow: 0 0 0px 1px rgba(255,255,255,.4),
-    0 0 0px 3px #2c3033;
 }
-.header{
+
+.header {
     width: 100%;
     height: 50px;
-
     border-radius: 10px 10px 0 0px;
     background-image: linear-gradient(#687480 0%, #3b4755 100%);
     font: bold 18px/50px arial;
     text-align: center;
     color: white;
-    box-shadow: inset 0 -2px 3px 2px rgba(0,0,0,.4),
-    0 2px 2px 2px rgba(0,0,0,.4);
+    box-shadow: inset 0 -2px 3px 2px rgba(0, 0, 0, .4),
+    0 2px 2px 2px rgba(0, 0, 0, .4);
 }
-span{
+
+span {
     display: block;
     width: 100%;
     height: 90%;
     border-bottom: dashed 2px #54687a;
 }
-.wrap-list{
-    height: 85%;
-    padding: 20px 0px;
-    box-shadow: inset 0 0px 5px black;
-    border-radius: 0 0 10px 10px;
-    background-image: linear-gradient(transparent 97%, gray 100%);
-}
 
-input[type="checkbox"]{
-    position: relative;
+input[type="checkbox"] {
     top: 14px;
     right: 12px;
-    float: right;
+    width: 15px;
+    height: 15px;
 }
-input[type="checkbox"]:checked + label{
+
+input[type="checkbox"]:checked + label {
     text-decoration: line-through;
-    color: rgba(0,0,0,.3);
+    color: rgba(0, 0, 0, .3);
 }
-.list{
+
+.list {
     list-style: none;
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
 }
-.list li:nth-child(odd){
-    background: rgba(0,0,50,.1);
+
+.list li:nth-child(odd) {
+    background: rgba(0, 0, 50, .1);
 }
-.list li{
+
+.list li {
     float: left;
     width: 100%;
 }
-label{
+
+label {
     padding: 10px;
     cursor: pointer;
     float: left;
     width: 95%;
     transition: all .3s ease;
+}
+
+.myform {
+    margin: 50px;
+}
+
+input#input-1 {
+    display: block;
+    font-size: 1.2em;
+    padding: 0.25em;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    border: 1px solid #BABABA;
+}
+
+input#input-1:focus {
+    border: 2px solid #69f;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* ------ Botton ------ */
+.btn {
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    padding: 12px 30px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1abc9c;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #48c9b0;
+}
+
+.btn-primary:active {
+    background: #16a085;
 }
